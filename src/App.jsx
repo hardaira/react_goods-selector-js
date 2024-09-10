@@ -18,7 +18,7 @@ export const goods = [
 
 export const App = () => {
   const [selectedGood, setSelectedGood] = useState('Jam');
-  
+
   const handleClick = good => {
     if (good === selectedGood) {
       setSelectedGood('');
