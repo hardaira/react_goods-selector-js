@@ -29,7 +29,7 @@ export const App = () => {
 
   const reset = () => {
     setSelectedGood('');
-  }
+  };
 
   return (
     <main className="section container">
@@ -53,6 +53,7 @@ export const App = () => {
           {goods.map(good => (
             <tr
               data-cy="Good"
+              key={good}
               className={classNames({
                 'has-background-success-light': good === selectedGood,
               })}
